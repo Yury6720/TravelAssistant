@@ -4,6 +4,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+      label: dev@flyer
 eureka:
   client:
     register-with-eureka: true

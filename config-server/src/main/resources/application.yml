@@ -8,6 +8,7 @@ spring:
         git:
           uri: https://github.com/Flyer-jr/TravelAssistant
           search-paths: ConfigData
+          default-label: main
 server:
   port: 8888
 
