@@ -1,0 +1,25 @@
+spring:
+  flyway:
+    ignore-missing-migrations: true
+    locations: classpath:/db.migration
+    baseline-on-migrate: true
+    baseline-description: Flyway Scripts
+
+  datasource:
+    driverName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/travelDataBase
+    username: postgres
+    password: CA59563
+    initialSize: 10
+    maxActive: 7
+    
+server:
+  port: 8085
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
